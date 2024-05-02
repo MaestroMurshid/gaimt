@@ -1,0 +1,15 @@
+.entryBox {
+    /* Styles for the container div (optional) */
+    position: absolute;
+    display: flex; /* Center the input horizontally (optional) */
+    margin-left: 100px;
+  }
+  
+  .searchInput {
+    /* Styles for the input field */
+    border: 1px solid #ccc; /* Example border */
+    padding: 5px; /* Example padding */
+    border-radius: 4px; /* Example rounded corners */
+    /* Add other styles as needed (width, font-size, etc.) */
+  }
+  

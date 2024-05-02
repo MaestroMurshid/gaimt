@@ -1,0 +1,40 @@
+.features {
+    text-align: center; /* Center the section content */
+    color: rgb(0, 0, 0);
+    background-color: white; 
+    position: relative;
+    padding-top: 1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  h2{
+    margin-left: 10px;
+  }
+  
+  .featuresList {
+    display: flex;
+    justify-content: space-between; /* Distribute features horizontally */
+    align-items: center; /* Vertically align content within features */
+    margin: 0 auto; /* Center the list horizontally */
+    width: fit-content; /* Allow features to shrink to fit content */
+  }
+  
+  .featureItem {
+    flex: 1; /* Make features share available space equally */
+    padding: 0.5rem; /* Reduce default padding for content */
+  }
+  .featureItem h3,
+.featureItem p {
+  padding: 0.5rem 0; /* Adjust padding within feature item */
+}
+  
+  .separator {
+    width: 0.5px; /* Width of the separation line */
+    height: 100%; /* Adjust height as needed */
+    background-color: #042263; /* Color of the separation line */
+    margin-top: -75px;
+  }  
+  p{
+    font-size: 15px;
+    text-align: center;
+    margin-right: 2%;
+  }

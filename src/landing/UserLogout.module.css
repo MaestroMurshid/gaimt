@@ -1,0 +1,38 @@
+/* Initial UserLogout Styles (adjusted for positioning) */
+.userLogout {
+    position: fixed;
+    top: 10px;  /* Adjust vertical distance from the top */
+    right: 10px; /* Adjust horizontal distance from the right */
+    display: flex; /* Arranges icon and button horizontally */
+    align-items: center; /* Vertically centers icon and button */
+  }
+  
+  /* Optional Customization Styles */
+  
+  /* User Icon Styles (adjust for spacing and appearance) */
+  .userIcon {
+    width: 30px;  /* Adjust icon width */
+    height: 30px; /* Adjust icon height */
+    margin-right: 5px; /* Add spacing between icon and button */
+  }
+  
+  /* Logout Button Styles (customize appearance) */
+  .logoutButton {
+  background-color: #0D085D; /* Green */
+  border: none;
+  color: white;
+  padding: 9px 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  display: inline-block;
+  text-decoration:none ;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 7px;
+  margin-right: 15%;
+  
+}
+.logoutButton:hover {
+  background-color: #261dad; /* Green hover effect */
+}
+

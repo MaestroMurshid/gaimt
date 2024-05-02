@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.largeImageWrapper {
+    margin-right: 20px;
+}
+
+.largeImage {
+    width: 600px;
+    height: auto;
+}
+
+.smallImagesWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.smallImage {
+    width: 100%;
+    height: auto;
+}

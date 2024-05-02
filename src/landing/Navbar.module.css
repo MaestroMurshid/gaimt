@@ -1,0 +1,107 @@
+/* Initial Navbar Styles */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  
+  width: 200px; /* Initial width */
+  background-color: #f0f0f0;
+  padding: 1rem 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar.expanded {
+  width: 170px;
+ /* Expanded width */
+}
+
+.navbar.collapsed {
+  width: 100px; 
+ /* Contracted width */
+}
+
+/* ... other navbar styles */
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 15%;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for list visibility */
+}
+
+.navList.open {
+  display: contents;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 1rem; /* Add space below the logo */
+}
+
+/* Navigation List Styles */
+
+.navItem {
+  margin: 0.5rem 0; /* Add some margin between list items */
+  text-align: center; /* Center text within list items */
+}
+
+/* Navigation Link Styles */
+
+.navLink {
+  text-decoration: none; /* Remove underline from links */
+  color: #000000; /* Link text color */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family for links */
+  display: flex;
+  font-weight: 600; /* Bold text */
+  flex-direction: row;
+  align-items: center; /* Align icons and text vertically */
+  padding: 0.5rem 1rem; /* Add some padding inside links */
+}
+
+.navLink:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+/* Navigation Icon Styles */
+
+.navIcon {
+  width: 20px; /* Set icon width */
+  height: 20px; /* Set icon height */
+  margin-right: 0.5rem; /* Add space between icon and text */
+}
+
+/* Text Visibility Styles */
+
+.navTextVisible {
+display: contents;}
+
+.navTextHidden {
+display: none;  
+transition: opacity 0.3s ease-in-out; /* Smooth transition for text hiding/showing */
+}
+
+/* Toggle Button Styles (incomplete) */
+
+.toggleButton {
+  position: absolute;
+  bottom: 1rem;
+  left: 100%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #b81a1a;
+  color: #2a1ca8; /* Button text color (if used) */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: relative; /* Added for image positioning */
+}
+
+.toggleButton:hover {
+  background-color: #444;
+}
+
