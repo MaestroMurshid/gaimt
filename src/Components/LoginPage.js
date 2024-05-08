@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import styles from './LoginPage.module.css'; // Import styles for the login page
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const [username, setUsername] = useState(''); // State for username
   const [password, setPassword] = useState(''); // State for password
   const [errorMessage, setErrorMessage] = useState(''); // State for error message
 
+  let navigate = useNavigate();
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
@@ -15,29 +17,31 @@ function LoginPage() {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault(); 
 
-    // Implement login logic here (replace with your actual logic)
-    // - Validate username and password (e.g., check against a database or API)
-    // - Handle successful login (e.g., redirect to another page or store user data)
-    // - Handle failed login (e.g., display an error message)
-
-    const isValid = validateCredentials(username, password); // Replace with your validation logic
+    const isValid = validateCredentials(username, password); 
 
     if (isValid) {
-      // Login successful (replace with desired action)
       console.log('Login successful!');
-      // Redirect or update state to indicate successful login
+      alert("Login Successful");
+      let path = `/generate`; 
+      navigate(path);
+
     } else {
-      setErrorMessage('Invalid username or password.'); // Display error message
+      setErrorMessage('Invalid username or password.'); 
+
     }
   };
 
   return (
-    <div className={styles.login}>
-
+  <div style={{
+    marginLeft: "400px",
+    display: "flex",
+    alignItems: "center"
+}}>
+      <div className={styles.login}>
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ display: "flex", width: "500px", flexDirection: "column" }}>
         <label htmlFor="username">Username:</label>
         <input
           type="text"
@@ -58,13 +62,15 @@ function LoginPage() {
         <button type="submit">Login</button>
       </form>
     </div>
+    </div>
+    
   );
 }
 export default LoginPage;
 
-// Example validation function (replace with your actual logic)
+
 function validateCredentials(username, password) {
-  // Simulate validation against a database or API
-  return username === 'admin' && password === 'password123';
+
+  return username === 'admin' && password === '123';
 }
 

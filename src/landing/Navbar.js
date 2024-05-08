@@ -7,12 +7,12 @@ function Navbar() {
   const navItems = [
     { text: 'Home', path: '/', icon: 'home.png' }, // Replace with your image path
     { text: 'Saved', path: '/saved', icon: 'saved.png' }, // Replace with your image path
-    { text: 'Templates', path: '/templates', icon: 'templates.png' }, // Replace with your image path
+    { text: 'Logo', path: '/logo', icon: 'templates.png' }, // Replace with your image path
     { text: 'Generate', path: '/generate', icon: 'generate.png' }, // Replace with your image path
   ];
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen); // Toggle isOpen state on click
+    setIsOpen(!isOpen); 
   };
 
   return (

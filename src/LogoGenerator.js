@@ -36,10 +36,13 @@ function PosterGenerator() {
 
   return (  
      
-    <div>
+    <div style={{    
+    alignItems: "center",
+    marginLeft: "300px",
+    marginTop: "100px"}}>
       <div style={{ 'height': '100%', display: 'flex' }}>
-        <div className='wrapper' style={{ backgroundColor: "#303030", 'height': '60%', "width" : "600px" , 'maxHeight': '60%' }}>
-          <div class='container'>
+        <div className='wrapper' style={{ borderRadius: "25px", backgroundColor: "#303030", 'height': '60%', "width" : "600px" , 'maxHeight': '60%' }}>
+          <div class='container' style={{padding: "20px"}}>
             {ImageSrc && <img src={`${ImageSrc}`} />}
             {error && <p>Error: {error}</p>}
           </div>
